@@ -20,6 +20,7 @@ const New = () => {
       </h1>
 
       <img
+        alt="rooms"
         className="mb-10"
         width="80%"
         src="../illustrations/room.svg"

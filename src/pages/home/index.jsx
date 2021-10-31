@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Icon } from '../../components'
 import { useQuery } from '../../query'
 import Device from './device'
 import NoData from './noData'
@@ -17,7 +16,7 @@ const Home = () => {
     if (!rooms.length) return
 
     const newDevices = devices.filter(device => (
-      device.room_id == rooms[currentRoomID].id
+      device.room_id === rooms[currentRoomID].id
     ))
 
     setCurrentDevices(newDevices)
@@ -28,14 +27,14 @@ const Home = () => {
   const nextRoom = () => {
     const numberOfRooms = rooms.length
 
-    if ((numberOfRooms - 1) == currentRoomID) setCurrentRoomID(0)
+    if ((numberOfRooms - 1) === currentRoomID) setCurrentRoomID(0)
     else setCurrentRoomID(currentRoomID + 1)
   }
 
   const prevRoom = () => {
     const numberOfRooms = rooms.length
 
-    if (currentRoomID == 0) setCurrentRoomID(numberOfRooms - 1)
+    if (currentRoomID === 0) setCurrentRoomID(numberOfRooms - 1)
     else setCurrentRoomID(currentRoomID - 1)
   }
 

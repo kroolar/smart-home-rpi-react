@@ -7,7 +7,7 @@ const Nav = () => {
 
   const items = [
     {
-      active: currentLocation == '/',
+      active: currentLocation === '/',
       icon: 'home',
       href: '/'
     },

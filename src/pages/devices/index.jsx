@@ -21,7 +21,7 @@ const Devices = () => {
     room_id,
     state
   }) => {
-    const room = rooms.find(({ id }) => id == room_id)
+    const room = rooms.find(({ id }) => id === room_id)
 
     return (
       [

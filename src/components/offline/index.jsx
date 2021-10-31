@@ -17,6 +17,7 @@ const Offline = () => {
       </p>
 
       <img
+        alt="offline"
         className="offline__illustration"
         src="../illustrations/no-signal.svg"
       />

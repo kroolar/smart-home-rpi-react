@@ -8,7 +8,7 @@ import {
 } from '../../components'
 
 const Rooms = () => {
-  const { data:rooms, remove, loading } = useQuery('rooms')
+  const { data:rooms, remove } = useQuery('rooms')
   const params = new URLSearchParams(window.location.search).get('success')
 
   const tableData = rooms.map(({ devices, id, name }) => {
