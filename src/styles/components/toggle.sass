@@ -1,0 +1,45 @@
+.toggle
+  align-items: center
+  background-color: $gray-300
+  border-radius: 1rem
+  display: flex
+  height: 2rem
+  justify-content: space-between
+  padding: .5rem
+  position: relative
+  transition: .3s
+  width: 4rem
+
+  &__trigger
+    background-color: white
+    border-radius: 50%
+    box-shadow: $shadow
+    height: 1.5rem
+    left: .25rem
+    position: absolute
+    transition: .3s
+    width: 1.5rem
+
+  &__label
+    color: white
+    font-size: .9rem
+    font-weight: 600
+
+    &--on
+      opacity: 0
+
+  &--true
+    background-color: $gray-800
+
+    .toggle__label
+      transition: .3s
+
+      &--off
+        opacity: 0
+
+      &--on
+        opacity: 1
+
+    .toggle__trigger
+      background-color: white
+      left: 2.25rem
