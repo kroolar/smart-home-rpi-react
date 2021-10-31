@@ -1,0 +1,28 @@
+.alert
+  align-items: center
+  animation: opacity 5s forwards
+  background-color: $green-500
+  border-radius: 6px
+  bottom: 4.5rem
+  color: white
+  display: flex
+  padding: .7rem
+  position: fixed
+  width: calc(100% - 2rem)
+
+  &__icon
+    margin-right: .7rem
+
+  &__text
+    flex-grow: 1
+    line-height: 1
+
+@keyframes opacity
+  0%
+    opacity: 1
+  
+  90%
+    opacity: 1
+  
+  100%
+    opacity: 0
