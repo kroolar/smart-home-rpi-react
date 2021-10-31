@@ -1,0 +1,68 @@
+.home
+  &__no-data
+    align-items: center
+    display: flex
+    flex-direction: column
+    margin-top: 5rem
+
+  &__no-data-illustration
+    margin-bottom: 3rem
+    width: 80%
+
+  &__no-data-text
+    color: $gray-800
+    font-size: 1.8rem
+    font-weight: 400
+    text-align: center
+
+  &__switcher
+    align-items: center
+    color: $gray-600
+    display: flex
+    font-size: 1.5rem
+    justify-content: space-between
+    margin-bottom: 1rem
+
+  &__switcher-name
+    font-weight: 700
+
+  &__switcher-arrow
+    border-radius: 50%
+    display: block
+    font-size: 1.5rem
+
+
+  &__device
+    background-color: white
+    border-radius: 1rem
+    box-shadow: $shadow
+    display: flex
+    flex-direction: column
+    height: 8rem
+    margin-bottom: 1rem
+    padding: 1rem
+    width: 9.8rem
+
+  &__device-content
+    align-items: flex-start
+    display: flex
+    flex: 1
+    justify-content: space-between
+    margin-bottom: 2rem
+
+  &__device-icon
+    color: $gray-800
+    font-size: 2rem
+    transition: .3s
+
+  &__device-name
+    font-size: 1.1rem
+    font-weight: 700
+    transition: .3s
+
+  &__device--false
+    .home__device-icon
+      color: $gray-300
+
+    .home__device-name
+      color: $gray-300
