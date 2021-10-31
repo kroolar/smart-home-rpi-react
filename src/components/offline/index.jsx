@@ -24,7 +24,7 @@ const Offline = () => {
       <Button
         onClick={handleLoading}
         loading={loading}
-        title="Reload"
+        text="Reload"
       />
     </div>
   )
