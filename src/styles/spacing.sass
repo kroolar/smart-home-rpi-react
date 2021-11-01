@@ -1,0 +1,57 @@
+$sizes: 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10
+
+@each $size in $sizes
+  .m-#{$size}
+    margin: $size / 4 + rem
+
+  .ml-#{$size}
+    margin-left: $size / 4 + rem
+
+  .mt-#{$size}
+    margin-top: $size / 4 + rem
+
+  .mr-#{$size}
+    margin-right: $size / 4 + rem
+
+  .mb-#{$size}
+    margin-bottom: $size / 4 + rem
+
+  .p-#{$size}
+    padding: $size / 4 + rem
+
+  .pl-#{$size}
+    padding-left: $size / 4 + rem
+
+  .pt-#{$size}
+    padding-top: $size / 4 + rem
+
+  .pr-#{$size}
+    padding-right: $size / 4 + rem
+
+  .pb-#{$size}
+    padding-bottom: $size / 4 + rem
+
+.w-100
+  width: 100%
+
+.w-1
+  width: .25rem
+
+.w-4
+  margin-right: .5rem
+  width: 1.2rem
+
+.text-gray-800
+  color: $gray-800
+
+.title
+  font-weight: 300
+  text-align: center
+  margin-bottom: 2rem
+  font-size: 2.5rem
+
+.flex
+  display: flex
+
+.text-center
+  text-align: center

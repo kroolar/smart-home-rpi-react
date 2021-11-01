@@ -1,0 +1,81 @@
+.select
+  display: flex
+  flex-direction: column
+  border-bottom-left-radius: 6px
+  border-top-left-radius: 6px
+  position: relative
+
+  &__field
+    display: flex
+    align-items: center
+    padding: 1rem
+    background-color: white
+    border-radius: 6px
+    cursor: pointer
+    height: 2.5rem
+    width: 100%
+    justify-content: space-between
+    box-shadow: $shadow
+
+  &__text
+    border: none
+    height: 2.5rem
+    border-radius: 6px
+    color: $gray-600
+    font-size: 1.2rem
+    font-weight: 600
+    outline: none
+    padding: 1rem
+    width: 100%
+    border-bottom-left-radius: 6px
+    border-top-left-radius: 6px
+
+  &__arrow
+    color: $gray-800
+    font-size: 1.3rem
+    margin-left: 1rem
+    transition: .3s
+
+  &__options
+    position: absolute
+    background-color: white
+    padding: .5rem
+    width: 100%
+    border-bottom-left-radius: 12px
+    border-bottom-right-radius: 12px
+    overflow-y: scroll
+    max-height: 14rem
+    top: 3.6rem
+    z-index: 1
+    margin-top: .15rem
+    box-shadow: $shadow
+
+  &__no-options
+    text-align: center
+
+  &__option
+    width: 100%
+    border-radius: 6px
+    padding: .5rem
+    cursor: pointer
+    color: $gray-900
+    font-weight: 700
+    transition: .3s
+
+    &:hover
+      background-color: $gray-200
+
+  &--error
+    .select__field
+      border: 2px solid $red-400
+
+    &.select__text
+      color: $red-400
+  
+  &--open
+    .select__field
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+
+    .select__arrow
+      transform: rotate(180deg)
